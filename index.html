@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Name – Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,700;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef1f7; --ink:#1b2340; --muted:#5b6485; --line:#c9d0e3; --accent:#f2b705; --accent-ink:#1b2340;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){--bg:#121830; --ink:#eef1f7; --muted:#9aa4c7; --line:#2c3558; --accent:#f2b705; --accent-ink:#121830; color-scheme:dark}
+}
+:root[data-theme="dark"]{--bg:#121830; --ink:#eef1f7; --muted:#9aa4c7; --line:#2c3558; --accent:#f2b705; --accent-ink:#121830; color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;font-size:1.05rem}
+main{max-width:44rem;margin:0 auto;padding:4rem 1.5rem 3rem}
+h1{font-size:clamp(3rem,13vw,6.5rem);line-height:.95;margin:0 0 1.5rem;font-weight:800;letter-spacing:-.03em}
+h1 span{background:var(--accent);color:var(--accent-ink);padding:0 .15em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.intro{font-size:1.25rem;max-width:34rem;margin:0 0 3.5rem;color:var(--muted)}
+h2{font-size:1.1rem;font-weight:700;margin:0 0 1rem}
+section{margin-bottom:3.5rem}
+.work a{display:flex;justify-content:space-between;gap:1rem;align-items:baseline;padding:1rem 0;border-top:1px solid var(--line);color:inherit;text-decoration:none}
+.work a:last-child{border-bottom:1px solid var(--line)}
+.work strong{font-size:1.2rem}
+.work small{color:var(--muted);font-size:.95rem;text-align:right}
+.work a:hover strong,.work a:focus-visible strong{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:.2em}
+a:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.about{max-width:34rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem}
+.links a{padding:.55rem 1rem;border:1.5px solid var(--ink);border-radius:999px;color:var(--ink);text-decoration:none;font-weight:700}
+.links a:hover,.links a:focus-visible{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+footer{color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<main>
+  <h1>Hi, I’m <span>Your Name</span></h1>
+  <p class="intro">I make things. This is where I keep them. Replace this line with a sentence about what you do.</p>
+
+  <section class="work">
+    <h2>Things I’ve made</h2>
+    <a href="#"><strong>Project one</strong><small>A short description of it</small></a>
+    <a href="#"><strong>Project two</strong><small>A short description of it</small></a>
+    <a href="#"><strong>Project three</strong><small>A short description of it</small></a>
+  </section>
+
+  <section class="about">
+    <h2>About me</h2>
+    <p>Write a few sentences here about who you are, what you’re into, and what you’re working on right now.</p>
+  </section>
+
+  <section>
+    <h2>Find me</h2>
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">Email</a>
+      <a href="#">Discord</a>
+    </div>
+  </section>
+
+  <footer>© Your Name</footer>
+</main>
+</body>
+</html>
