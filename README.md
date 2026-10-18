@@ -1,1 +1,1 @@
-Rn it's just a template you just wait.
+rn literally nothing here lol
